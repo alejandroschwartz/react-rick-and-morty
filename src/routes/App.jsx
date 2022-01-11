@@ -12,10 +12,10 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/react-rick-and-morty" element={ 
+        <Route path="/" element={ 
           <Home darkMode={darkMode} setDarkMode={setDarkMode} /> 
         } />
-        <Route path="/react-rick-and-morty/:id" element={ 
+        <Route path="/:id" element={ 
           <Player darkMode={darkMode} setDarkMode={setDarkMode} /> 
         } />
       </Routes>

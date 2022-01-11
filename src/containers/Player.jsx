@@ -22,7 +22,7 @@ export default function Player({ darkMode, setDarkMode }) {
     <div className={"App " + bg}>
       <Header darkMode={darkMode} setDarkMode={setDarkMode} />
       <div className="Player">
-        <NavLink to="/react-rick-and-morty">
+        <NavLink to="/">
           <button className={bgBtn} type="button">
             Volver
           </button>
