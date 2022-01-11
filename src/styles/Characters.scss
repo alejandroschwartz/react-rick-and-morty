@@ -1,0 +1,142 @@
+.Character {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+
+.Character__containes {
+  width: 1100px;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.CharacterLight {
+  border: 5px solid #313434;
+  border-radius: 14px;
+  margin: 16px 10px;
+  overflow: hidden;
+  background: #f4f4f4;
+
+  .Character__details--h2 {
+    color: #313434;
+  }
+}
+
+.CharacterDark {
+  border: 5px solid rgb(132, 209, 16);
+  border-radius: 14px;
+  margin: 16px 10px;
+  overflow: hidden;
+  background: rgb(8, 0, 47);
+
+  .Character__details--h2 {
+    color: #f2f2f2;
+  }
+}
+
+.Character__image--container {
+  position: relative;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 98%);
+  overflow: hidden;
+}
+
+.Character__image {
+  width: 180px;
+  height: 240px;
+  object-fit: cover;
+}
+
+.Character__details {
+  margin: 0%;
+  padding: 4px 8px;
+}
+
+.Character__details--h2 {
+  margin: 0%;
+  width: 164px;
+  height: 48px;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.Search {
+  width: 100%;
+  margin: 0px 12px;
+  padding-bottom: 36px;
+  display: flex;
+  justify-content: center;
+}
+.Search__inputDark {
+  max-width: 600px;
+  width: 100%;
+  height: 40px;
+  padding: 0px 22px;
+  border: 4px solid rgb(132, 209, 16);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.2);
+  outline: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.Search__inputLight {
+  max-width: 600px;
+  width: 100%;
+  height: 40px;
+  padding: 0px 22px;
+  border: 4px solid #313434;
+  border-radius: 24px;
+  background: rgba(0, 0, 0, 0.22);
+  outline: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  opacity: 1; /* Firefox */
+}
+
+.wave {
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+}
+.wave__svg {
+  height: 100%;
+  width: 100%;
+}
+.wave__path {
+  stroke: none;
+  fill: #212429;
+}
+.ErrorLight {
+  text-align: center;
+  color: #313434;
+}
+.ErrorDark {
+  text-align: center;
+  color: #ffffff;
+}
+.fa-search {
+  height: 40vh;
+  font-size: 120px;
+  color: rgb(132, 209, 16);
+  text-align: center;
+}
