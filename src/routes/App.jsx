@@ -1,14 +1,21 @@
 import React, { useState } from "react";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import Home from "../containers/Home";
-import Player from '../containers/Player';
+import Home from "../pages/Home";
+import Player from '../pages/Player';
 import "../styles/App.scss";
 
 
 export default function App() {
-  const [darkMode, setDarkMode] = useState(false);
-  
+  const [darkMode, setDarkMode] = useState(() => {
+    try {
+      const darkMode = window.localStorage.getItem('darkMode')
+      return JSON.parse(darkMode)
+    } catch (error) {
+      return false
+    }
+  });
+
   return (
     <BrowserRouter>
       <Routes>

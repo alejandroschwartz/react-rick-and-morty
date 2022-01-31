@@ -1,86 +1,91 @@
-.header__title{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-
 .DarkMode {
   background: #08002f;
 
   h1, p {
-      margin: 0%;
-      color: rgb(132, 209, 16);
+    margin: 0%;
+    color: rgb(132, 209, 16);
   }
 
   .btn {
-      border: 4px solid rgb(132, 209, 16);
-      color: rgb(132, 209, 16);
+    border: 4px solid rgb(132, 209, 16);
+    color: rgb(132, 209, 16);
   }
 }
 
 .LightMode {
-  background: #f4f4f4;
+  background: #eeeeee;
 
   h1, p {
-      margin: 0%;
-      color: #08002f;
+    margin: 0%;
+    color: #08002f;
   }
 
   .btn {
-      border: 4px solid rgb(8, 0, 47);
-      color: rgb(8, 0, 47);
+    border: 4px solid rgb(8, 0, 47);
+    color: rgb(8, 0, 47);
   }
 }
 
 .nav {
-  height: 90px;
-  padding: 0px 60px;
+  position: fixed;
+  width: 100%;
+  height: 60px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   font-family: 'Lobster', cursive;
   font-weight: 500;
+  z-index: 1;
   
   h1 {
-      font-size: 36px;
+      font-size: 24px;
   }
 
   p {
-      font-size: 16px;
+      font-size: 14px;
   }
 
   @media only screen and (max-width: 540px) {
+    padding: 0px 16px;
 
-      padding: 0px 16px;
-
-      h1 {
-          font-size: 32px;
-      }
+    h1 {
+      font-size: 20px;
+    } 
   
-      p {
-          font-size: 14px;
-      }
+    p {
+      font-size: 12px;
+    }
+  }
+}
+
+.header__title{
+  margin-left: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  @media only screen and (max-width: 540px) {
+    margin-left: 14px;
   }
 }
 
 .btn {
-  height: 42px;
-  padding: 4px 12px;
-  border-radius: 12px;
+  margin-right: 60px;
+  height: 36px;
+  padding: 4px 8px;
+  border-radius: 18px;
   font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 700;
   outline: none;
   background: none;
 
-  @media only screen and (max-width: 540px) { 
-              
-      height: 48px;
-      width: 72px;
-      padding: 4px 4px;
-      border-radius: 12px;
-      font-size: 12px;
+  @media only screen and (max-width: 540px) {    
+    width: 100px;
+    padding: 4px 4px;
+    font-size: 8px;
+    margin-right: 36px;
   }
 }

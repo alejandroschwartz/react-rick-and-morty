@@ -1,0 +1,66 @@
+.CharacterLight {
+  border: 5px solid #313434;
+  border-radius: 14px;
+  margin: 16px 10px;
+  overflow: hidden;
+  background: #f4f4f4;
+
+  .Character__details--h2 {
+    color: #313434;
+  }
+}
+
+.CharacterDark {
+  border: 5px solid rgb(132, 209, 16);
+  border-radius: 14px;
+  margin: 16px 10px;
+  overflow: hidden;
+  background: rgb(8, 0, 47);
+
+  .Character__details--h2 {
+    color: #f2f2f2;
+  }
+}
+
+.Character__image--container {
+  position: relative;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 98%);
+  overflow: hidden;
+}
+
+.Character__image {
+  width: 180px;
+  height: 240px;
+  object-fit: cover;
+
+  @media only screen and (max-width: 540px) {
+    width: 120px;
+    height: 160px;
+  }
+}
+
+.Character__details {
+  margin: 0%;
+  padding: 4px 8px;
+}
+
+.Character__details--h2 {
+  margin: 0%;
+  width: 164px;
+  height: 48px;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  @media only screen and (max-width: 540px) {
+    width: 104px;
+    height: 42px;
+    font-size: 12px;
+  }
+}
+
+.Character__link {
+  text-decoration: none;
+}
